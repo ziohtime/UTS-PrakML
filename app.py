@@ -116,7 +116,8 @@ def image_compression():
       # Download button for compressed image
       st.write("### Download Compressed Image")
       image_download_button_str = f"Download Compressed Image File"
-      st.download_button(label=image_download_button
+      st.download_button(label=image_download_button_str, data=compressed_image, file_name=f"{os.path.splitext(image_file.name)[0]}_compressed.jpg", mime="image/jpeg", key=None)
+
 
 # Multipage function
 def multipage():
